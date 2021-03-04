@@ -1,12 +1,12 @@
 name: flutter_tapers
+version: 0.1.1
 description: Tapers that ensure you can use types from the Flutter SDK with Chest.
-version: 0.1.0-0
 repository: https://github.com/chestdb/flutter_tapers
 
 environment:
-  sdk: '>=2.12.0-0 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
-  chest: ^0.1.0-0
+  chest: ^0.1.1
   flutter:
     sdk: flutter
