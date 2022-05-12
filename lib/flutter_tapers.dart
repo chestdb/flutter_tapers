@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:chest/chest.dart';
+import 'package:flutter/material.dart';
 
 extension TapersForFlutter on TapersNamespace {
   Map<int, Taper<dynamic>> get forFlutter {
@@ -19,14 +19,12 @@ class _TaperForColor extends BytesTaper<Color> {
   const _TaperForColor();
 
   @override
-  List<int> toBytes(Color color) {
-    return [color.alpha, color.red, color.green, color.blue];
-  }
+  List<int> toBytes(Color color) =>
+      [color.alpha, color.red, color.green, color.blue];
 
   @override
-  Color fromBytes(List<int> bytes) {
-    return Color.fromARGB(bytes[0], bytes[1], bytes[2], bytes[3]);
-  }
+  Color fromBytes(List<int> bytes) =>
+      Color.fromARGB(bytes[0], bytes[1], bytes[2], bytes[3]);
 }
 
 extension TaperForMaterialColor on TaperNamespace {
